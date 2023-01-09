@@ -1,8 +1,0 @@
-<Project TreatAsLocalProperty="TaskAssembly">
-  <PropertyGroup>
-    <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\Azure.Bicep.MSBuild.dll</TaskAssembly>
-    <BicepDefaultOutputFileExtension Condition=" $(BicepDefaultOutputFileExtension) == '' ">.json</BicepDefaultOutputFileExtension>
-  </PropertyGroup>
-
-  <UsingTask TaskName="Bicep" AssemblyFile="$(TaskAssembly)" />
-</Project>
